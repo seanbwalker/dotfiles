@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-vim.o.termguicolors = false
+-- [[vim.o.termguicolors = false]]
 
 opt.number = true
 
