@@ -1,5 +1,6 @@
 theme = Sea Shells
-background-blur-radius = 20
 mouse-hide-while-typing = true
-background-blur-radius = 20
 font-size = 14
+cursor-style = block
+shell-integration = zsh
+
