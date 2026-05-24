@@ -1,6 +1,5 @@
 theme = Sea Shells
 mouse-hide-while-typing = true
-font-size = 14
+font-size = 16
 cursor-style = block
 shell-integration = zsh
-
