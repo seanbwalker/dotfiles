@@ -24,5 +24,10 @@ opt.splitbelow = true
 
 opt.swapfile = false
 
+opt.timeoutlen = 500
 
 vim.cmd("let g:netrw_liststyle = 3")
+
+opt.scrolloff = 8
+opt.updatetime = 250
+opt.signcolumn = "yes"
