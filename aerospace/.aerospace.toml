@@ -19,7 +19,7 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "M", "T"]
+persistent-workspaces = ["1", "2", "3", "4", "5",]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -46,7 +46,7 @@ on-mode-changed = []
     # All possible keys:
     # - Letters.        a, b, c, ..., z
     # - Numbers.        0, 1, 2, ..., 9
-    # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+    # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9$
     # - F-keys.         f1, f2, ..., f20
     # - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
     #                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
@@ -100,8 +100,6 @@ on-mode-changed = []
     cmd-ctrl-alt-7 = 'workspace 7'
     cmd-ctrl-alt-8 = 'workspace 8'
     cmd-ctrl-alt-9 = 'workspace 9'
-    cmd-ctrl-alt-m = 'workspace M'
-    cmd-ctrl-alt-t = 'workspace T'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
@@ -119,6 +117,11 @@ on-mode-changed = []
     alt-tab = 'workspace-back-and-forth'
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
     alt-shift-semicolon = 'mode service'
+
+    cmd-ctrl-alt-b = 'exec-and-forget open -na "/Applications/Brave Browser.app"'
+    cmd-ctrl-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
+    cmd-ctrl-alt-enter = 'exec-and-forget open -na /Applications/Ghostty.app'
+
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
