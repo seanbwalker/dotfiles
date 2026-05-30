@@ -49,10 +49,15 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 eval "$(fzf --zsh)"
 
 # Python version management
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv &>/dev/null; then
+  eval "$(pyenv init -)"
+fi
 
 # Node version management
-eval "$(fnm env --use-on-cd --shell zsh)"
+if command -v fnm &>/dev/null && [[ -z "$FNM_MULTISHELL_PATH" ]]; then
+  eval "$(fnm env --use-on-cd --shell zsh)"
+fi
+
+# Prompt Starship
 eval "$(starship init zsh)"
+
