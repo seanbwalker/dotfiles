@@ -73,6 +73,7 @@ on-mode-changed = []
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     cmd-ctrl-alt-i= 'layout tiles horizontal vertical'
     cmd-ctrl-alt-u = 'layout accordion horizontal vertical'
+    cmd-ctrl-alt-y = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     cmd-ctrl-alt-h = 'focus left'
