@@ -122,7 +122,7 @@ on-mode-changed = []
 
     cmd-ctrl-alt-b = 'exec-and-forget open -na "/Applications/Brave Browser.app"'
     cmd-ctrl-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
-    cmd-ctrl-alt-enter = 'exec-and-forget open -na /Applications/Ghostty.app'
+    cmd-ctrl-alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
 
 
 # 'service' binding mode declaration.
