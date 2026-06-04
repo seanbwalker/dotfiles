@@ -30,12 +30,12 @@ on-mode-changed = []
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 10
-    inner.vertical =   10
-    outer.left =       10
-    outer.bottom =     10
-    outer.top =        10
-    outer.right =      10
+    inner.horizontal = 15
+    inner.vertical =   15
+    outer.left =       20
+    outer.bottom =     20
+    outer.top =        15
+    outer.right =      20
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -61,12 +61,6 @@ on-mode-changed = []
     # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-    # You can uncomment the following lines to open up terminal with alt + enter shortcut
-    # (like in i3)
-    # alt-enter = '''exec-and-forget osascript -e '
-    # tell application "Terminal"
-    #     do script
-    #     activate
     # end tell'
     # '''
 
@@ -123,6 +117,7 @@ on-mode-changed = []
     cmd-ctrl-alt-b = 'exec-and-forget open -na "/Applications/Brave Browser.app"'
     cmd-ctrl-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
     cmd-ctrl-alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+    cmd-ctrl-alt-e = 'exec-and-forget open -a /System/Library/CoreServices/Finder.app/'
 
 
 # 'service' binding mode declaration.
