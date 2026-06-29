@@ -1,3 +1,4 @@
+tap "modem-dev/tap"
 tap "nikitabobko/tap"
 tap "theboredteam/boring-notch", "https://github.com/TheBoredTeam/homebrew-boring-notch"
 # Modern, maintained replacement for ls
@@ -26,6 +27,8 @@ brew "xz"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Desktop-inspired terminal diff viewer for agent-authored changesets
+brew "modem-dev/tap/hunk", trusted: true
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
 # Not so boring notch That Rocks 🎸🎶 

@@ -18,6 +18,8 @@ return {
           "pyright",
           "jsonls",
           "yamlls",
+          "bashls",
+          "taplo",
         },
         automatic_installation = true,
         handlers = {
@@ -27,5 +29,20 @@ return {
         },
       })
     end,
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    dependencies = { "williamboman/mason.nvim" },
+    opts = {
+      ensure_installed = {
+        "black",
+        "isort",
+        "stylua",
+        "shfmt",
+        "prettier",
+      },
+      auto_update = false,
+      run_on_start = true,
+    },
   },
 }
