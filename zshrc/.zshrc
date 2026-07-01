@@ -62,4 +62,3 @@ fi
 
 # Prompt Starship
 eval "$(starship init zsh)"
-
