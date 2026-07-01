@@ -6,6 +6,6 @@ mouse-hide-while-typing = true
 font-size = 16
 cursor-style = bar
 shell-integration = zsh
-split-divider-color = #deb88d
 window-padding-x = 12
 window-padding-y = 10
+split-divider-color = #eb6f92
