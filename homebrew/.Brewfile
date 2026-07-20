@@ -1,5 +1,5 @@
+tap "anomalyco/tap"
 tap "nikitabobko/tap"
-tap "theboredteam/boring-notch", "https://github.com/TheBoredTeam/homebrew-boring-notch"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -14,22 +14,26 @@ brew "git"
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Python version management
 brew "pyenv"
+# Graphical command-line client for SSH
+brew "sshs"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
-# Not so boring notch That Rocks 🎸🎶 
-cask "theboredteam/boring-notch/boring-notch", trusted: true
 # Web browser focusing on privacy
 cask "brave-browser"
 # Terminal emulator that uses platform-native UI and GPU acceleration
