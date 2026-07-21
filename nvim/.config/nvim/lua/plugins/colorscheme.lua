@@ -7,7 +7,7 @@
 	end,
 }
 ]]
---[[return {
+return {
 	"folke/tokyonight.nvim",
 	lazy = false,
 	priority = 1000,
@@ -16,9 +16,8 @@
 		vim.cmd.colorscheme("tokyonight-night")
 	end,
 }
-]]
 
-return {
+--[[return {
 	dir = vim.fn.stdpath("config") .. "/lua/colors",
 	name = "seashells",
 	priority = 1000,
@@ -26,3 +25,4 @@ return {
 		require("colors.seashells").setup()
 	end,
 }
+]]
