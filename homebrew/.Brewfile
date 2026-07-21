@@ -1,5 +1,7 @@
 tap "anomalyco/tap"
 tap "nikitabobko/tap"
+# Multi-shell multi-command argument completer
+brew "carapace"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -8,6 +10,8 @@ brew "fastfetch"
 brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Replace zsh completion selection menu with fzf
+brew "fzf-tab"
 # Distributed revision control system
 brew "git"
 # Simple terminal UI for git commands

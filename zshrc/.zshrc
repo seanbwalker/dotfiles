@@ -18,11 +18,12 @@ setopt CORRECT
 setopt EXTENDED_GLOB
 setopt NO_BEEP
 
-# generic aliases
+# Generic aliases
 alias ff='fastfetch'
 alias lg='lazygit'
 alias nv='nvim'
 
+# Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -30,7 +31,7 @@ alias ~='cd ~'
 
 alias reload='source ~/.zshrc'
 
-# eza aliases
+# Eza aliases
 alias ls="eza --icons --group-directories-first"
 alias ll="eza -la --icons --group-directories-first --git"
 alias la="eza -a --icons --group-directories-first"
@@ -42,6 +43,18 @@ alias ltt="eza --tree --level=3 --icons --git-ignore"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
+
+# Auto-completion
+autoload -U compinit && compinit
+
+# Carapace
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
+
+
+# Fzf-tab
+source "/opt/homebrew/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh"
 
 # Plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
